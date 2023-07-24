@@ -1,0 +1,13 @@
+/* REXX */                                                              00010000
+/* ADDRESS TSO 'TSOCLEAR' */                                            00020001
+  RES = 0                                                               00030001
+  A = 50                                                                00040001
+  B = 75                                                                00050001
+  CALL SIGMA A B RES                                                    00060001
+  SAY RES                                                               00070001
+  EXIT                                                                  00080001
+SIGMA: PROCEDURE EXPOSE RES                                             00090001
+  PARSE ARG C D RES                                                     00100001
+  RES = C + D                                                           00110001
+  RETURN                                                                00120001
+

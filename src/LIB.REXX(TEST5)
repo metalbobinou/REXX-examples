@@ -1,0 +1,11 @@
+/* REXX */                                                              00010000
+V1 = ADD3(10,20,30)                                                     00020003
+V2 = ADD3(5,100,25)                                                     00030003
+SAY "V1 = "V1                                                           00040001
+SAY "V2 = "V2                                                           00050001
+EXIT                                                                    00060001
+ADD3:                                                                   00070003
+ARG NUMBER1, NUMBER2, NUMBER3                                           00080001
+ANSWER = NUMBER1 + NUMBER2 + NUMBER3                                    00090001
+RETURN ANSWER                                                           00100001
+

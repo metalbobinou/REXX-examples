@@ -1,0 +1,16 @@
+/* REXX */                                                              00010002
+/* allocation bibliotheque REXX/ISPF utilisateur */                     00020002
+/* ********************************************* */                     00030002
+msg=msg(off)                                                            00040002
+/* commande TSO -> fi ~DD, da ~DSN... */                                00041003
+/* //STEP01 EXEC PGM=ALLOC            */                                00041103
+/* //SYSEXEC DD DSN=stage04.lib.rexx  */                                00042003
+"alloc fi(sysexec) da('stage04.lib.rexx',",                             00050002
+    "'isp.sispexec','sys1.sbpxexec') shr reuse"                         00060002
+/* "executil searchdd(yes)" */                                          00070002
+if rc = 0 then                                                          00080002
+  say 'Concatenation bibliotheque "DD SYSEXEC" allouees'                00090002
+else                                                                    00100002
+  say "RC="rc ""DD SYSEXEC" erreur d''allocation"                       00110002
+exit rc                                                                 00120002
+

@@ -1,0 +1,5 @@
+/* REXX */                                                              00010001
+ARG NUMBER1, NUMBER2, NUMBER3                                           00080000
+ANSWER = NUMBER1 + NUMBER2 + NUMBER3                                    00090000
+RETURN ANSWER                                                           00100000
+

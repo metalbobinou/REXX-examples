@@ -1,0 +1,24 @@
+/* REXX */                                                              00010000
+c = 0                                                                   00010101
+say c                                                                   00011001
+c = 'OLOLOLOLOOL'                                                       00020001
+say c                                                                   00030001
+c = 'C1'x /* en mode hexa EBCDIC */                                     00040001
+say c                                                                   00050001
+c = 'C1'                                                                00060001
+say c                                                                   00070001
+b = 'C''est la vie'                                                     00080001
+say b                                                                   00090001
+b = "Coucou Rire lil' buddy !"                                          00100001
+say b                                                                   00110001
+a = 12 + 12 - .6                                                        00120001
+say a                                                                   00130001
+DO i = 1 TO 4                                                           00140001
+  SAY 'Enter an employee name :'                                        00150001
+  /* PARSE PULL employee.i */                                           00160001
+  employee.i = 'lol'                                                    00161001
+END                                                                     00170001
+DO i =1 TO 4                                                            00180001
+  SAY employee.i                                                        00190001
+END                                                                     00200001
+

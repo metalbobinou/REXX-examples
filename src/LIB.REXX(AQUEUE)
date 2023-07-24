@@ -1,0 +1,24 @@
+/* REXX */                                                              00010000
+PUSH ELEMENT 1                                                          00010101
+NEWSTACK                                                                00011001
+PUSH 'COUCOU'                                                           00012001
+PUSH 'CHICOUTIMI !'                                                     00013001
+PUSH 'SPARC ARM MIPS PPC'                                               00014001
+PUSH 'IL EST BIZARRE'                                                   00015001
+SAY QUEUED()                                                            00016001
+DO I = 1 TO QUEUED()                                                    00017001
+  PULL REP                                                              00018001
+  SAY REP                                                               00019001
+END                                                                     00019101
+DELSTACK                                                                00019201
+PULL REP                                                                00019301
+SAY REP                                                                 00019401
+PUSH ELEMENT 2                                                          00020001
+PUSH ELEMENT 3                                                          00030001
+PUSH ELEMENT 4                                                          00040001
+PUSH ELEMENT 5                                                          00050001
+DO I = 1 TO QUEUED()                                                    00060000
+  PARSE PULL LOL                                                        00070000
+  SAY LOL                                                               00080000
+END                                                                     00090000
+

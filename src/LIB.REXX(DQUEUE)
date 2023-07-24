@@ -1,0 +1,7 @@
+/* REXX */                                                              00010000
+PUSH ELEMENT 1                                                          00010100
+PUSH 'COUCOU'                                                           00012000
+PUSH 'CHICOUTIMI !'                                                     00013000
+PUSH 'SPARC ARM MIPS PPC'                                               00014000
+PUSH 'IL EST BIZARRE'                                                   00015000
+

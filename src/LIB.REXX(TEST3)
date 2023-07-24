@@ -1,0 +1,30 @@
+/* REXX */                                                              00010002
+UID = USERID()                                                          00020002
+SAY UID                                                                 00030002
+SAY SYSVAR("SYSENV") /* RENVOIE FORE OU BACK POUR FOREGROUND OU PAS */  00030102
+X = SYSDSN("'STAGE04.LIB.JCC'")                                         00031002
+SAY X                                                                   00032002
+X = SYSCPUS('CPU.')                                                     00040002
+SAY "MAX CPUS AVAILABLE : "CPU.0                                        00050002
+SAY "SERIAL CPU1 : "CPU.1                                               00060002
+X = LISTDSI("'STAGE04.SEC.TEST'")                                       00070002
+SAY X                                                                   00080002
+IF X == 0 THEN                                                          00090002
+DO                                                                      00100002
+  SAY "DATA SET NAME : "SYSDSNAME                                       00110002
+  SAY "VOLUME SERIAL ID : "SYSVOLUME                                    00120002
+  SAY "DEVICE TYPE : "SYSUNIT                                           00130002
+  SAY "DATA SET TYPE : "SYSDORG                                         00140002
+  SAY "RECORD FORMAT : "SYSRECFM                                        00150002
+  SAY "RECORD LENGHT : "SYSRECL                                         00160002
+  SAY "RECORD BLOCK SIZE : "SYSBLKSIZE                                  00170002
+  SAY "KEY LENGHT : "SYSKEYLEN                                          00180002
+  SAY "DATA SET CREATED : "SYSCREATE                                    00190002
+  SAY "DATA SET LAST REFERENCED : "SYSREFDATE                           00200002
+  SAY "DATA SET UPDATED : "SYSUPDATED                                   00210002
+  SAY "DATA SET TYPE (PS/PDS) : "SYSDSSMS                               00220002
+  EXIT 0                                                                00230002
+END                                                                     00240002
+ELSE                                                                    00250002
+  EXIT 42                                                               00260002
+

@@ -1,0 +1,15 @@
+/* REXX */                                                              00010000
+PUSH SIGMA                                                              00010100
+PUSH AQUEUE                                                             00020000
+PUSH SIGMA                                                              00030000
+PUSH SIGMA                                                              00040000
+NEWSTACK                                                                00050001
+PULL LOL                                                                00051001
+SAY LOL                                                                 00052001
+DELSTACK                                                                00053001
+DO I = 1 TO QUEUED()                                                    00054001
+  PULL REP                                                              00055001
+  SAY REP                                                               00056001
+END                                                                     00057001
+EXIT                                                                    00060000
+

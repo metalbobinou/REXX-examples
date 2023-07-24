@@ -1,0 +1,6 @@
+/* REXX */                                                              00010000
+SAY 'Entrer nom ET prenom :'                                            00020001
+PUSH toto titi /* PUSH va remplir les 2 premiers arguments */           00021002
+PARSE PULL name surname adresse                                         00030002
+SAY surname name adresse /* sans PARSE, les lettres passent en MAJ */   00040002
+

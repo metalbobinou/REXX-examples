@@ -1,0 +1,10 @@
+/* REXX */                                                              00010000
+PUSH ELEMENT 1                                                          00020001
+PUSH ELEMENT 2                                                          00030001
+PUSH ELEMENT 3                                                          00040001
+PUSH ELEMENT 4                                                          00050001
+DO I = 1 TO QUEUED()                                                    00060000
+  PARSE PULL LOL                                                        00070002
+  SAY LOL                                                               00080002
+END                                                                     00090000
+
